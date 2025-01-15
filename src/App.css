@@ -1,12 +1,13 @@
+/*HOME.JSX CSS*/
 .sectionclass{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    height: 92vh;
+    height: 100vh;
     gap: 2.5rem;
     padding: 5rem;
-    background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);;
+    background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -100,4 +101,56 @@ p{
 
 .buttonclass:active {
   transform: translateY(-1px);
+}
+
+/*QUOTE.JSX CSS*/
+.quoteclass{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  animation: hueChange 40s infinite;
+
+}
+
+#quote-box {
+  border-radius: 12px 60px;
+  position: relative;
+  width: auto;
+  padding: 40px 50px;
+  display: table;
+  background-color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+
+}
+#quote-box .quote-text {
+  text-align: center;
+  width: 30rem;
+  height: auto;
+  clear: both;
+  font-weight: 600;
+  font-size: 1.75em;
+}
+#quote-box .quote-text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+#quote-box .quote-author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: right;
 }
