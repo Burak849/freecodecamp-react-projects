@@ -30,12 +30,6 @@ function Home() {
       </article>
       
       <article>
-      <h1>Markdown</h1>
-      <p>You can use this as a Markdown</p>
-      <button type='button' className='buttonclass'  onClick={() => navigate('/markdown')}>View</button>
-      </article>
-      
-      <article>
       <h1>Quote</h1>
       <p>You can use this as a Quote</p>
       <button type='button' className='buttonclass'  onClick={() => navigate('/quote')}>View</button>
