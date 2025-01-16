@@ -154,3 +154,18 @@ p{
   font-size: 1em;
   text-align: right;
 }
+
+
+/*DRUM*/
+.pad-bank{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+  border-radius: 20px;
+}
+.pad-bank .drum-pad{
+  color: white;
+  border-radius: 25px;
+  background: black;
+}
