@@ -18,6 +18,12 @@ function Home() {
       </article>
       
       <article>
+      <h1>Monster</h1>
+      <p>You can use this as a Monster</p>
+      <button type='button' className='buttonclass'  onClick={() => navigate('/monster')}>View</button>
+      </article>
+
+      <article>
       <h1>Drum</h1>
       <p>You can use this as a Drum</p>
       <button type='button' className='buttonclass'  onClick={() => navigate('/drum')}>View</button>
