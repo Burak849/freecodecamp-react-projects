@@ -1,4 +1,5 @@
 //JAVASCRIPT CAMP, IT WILL BE CONVERTED TO REACT PROJECT
+/*
 import React, { use, useState } from "react";
 import '../App.css';
 
@@ -238,4 +239,5 @@ const goCave = () => setMessage(locations[2].text);
   );
 };
 
-export default Monster;
+export default Monster; 
+*/

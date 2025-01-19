@@ -248,3 +248,48 @@ button {
   border: 3px solid #feac32;
 }
 */
+
+
+/*RANDOM BACKGROUND*/
+
+
+.sectclass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap:2rem;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #2C3E50;
+  transition: background-color 0.5s ease;
+}
+
+
+.bg-information-container {
+  margin-bottom: 20px;
+}
+
+.bg-information-container p {
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+}
+
+
+.btn1 {
+  padding: 10px 20px;
+  background-color: #2C3E50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #34495E;
+}
