@@ -5,7 +5,7 @@ import '../App.css';
 function Home() {
 
     const navigate = useNavigate();
-
+//TAMAMLANDIGINDA 3.ADRESE MONSTER EKLENECEK
   return (
     <section className='sectionclass'>
 
@@ -26,7 +26,7 @@ function Home() {
       <article>
       <h1>Monster</h1>
       <p>You can use this as a Monster</p>
-      <button type='button' className='buttonclass'  onClick={() => navigate('/monster')}>View</button>
+      <button type='button' className='buttonclass'  onClick={() => navigate('/')}>View</button>
       </article>
 
       <article>

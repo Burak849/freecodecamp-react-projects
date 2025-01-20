@@ -31,12 +31,12 @@ function Randombg() {
   }
 
   return (
-    <section className='sectclass' style={{backgroundColor: bgColor}}>
+    <div className='sectclass' style={{backgroundColor: bgColor}}>
       <div className="bg-information-container">
         <p>Hex Code: <span id="bg-hex-code">{bgColor}</span></p>
       </div>
       <button className="buttonclass" style={{transition: 'background-color 0.3s ease'}} onClick={changeBackgroundColor}>Change Background Color</button>
-    </section>
+    </div>
   );
 }
 

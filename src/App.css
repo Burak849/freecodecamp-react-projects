@@ -1,5 +1,5 @@
 /*HOME.JSX CSS*/
-.sectionclass{
+section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
