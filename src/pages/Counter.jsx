@@ -1,3 +1,4 @@
+//BURASI DA DUZENLENECEK
 import React from 'react';
 import '../App.css';
 
