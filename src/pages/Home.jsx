@@ -17,6 +17,12 @@ function Home() {
       <button type='button' className='buttonclass'  onClick={() => navigate('/calculator')}>View</button>
       </article>
 
+      <article>
+      <h1>Music</h1>
+      <p>You can use this as a Calculator</p>
+      <button type='button' className='buttonclass'  onClick={() => navigate('/music')}>View</button>
+      </article>
+
       <article style={{gap:'0.7rem'}}>
       <h1>Random Background</h1>
       <p style={{fontSize:'0.9em'}}>You can use this as a Background Changer</p>
