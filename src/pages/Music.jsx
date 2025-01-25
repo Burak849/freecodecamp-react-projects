@@ -100,7 +100,10 @@ function Home() {
     } else {
       audio.currentTime = userData?.songCurrentTime;
     }
+    userData.currentSong = song;
+    playButton.classList.add("playing");
   
+    audio.play();
   };
   
   const renderSongs = (array) => {
@@ -125,6 +128,10 @@ function Home() {
     playlistSongs.innerHTML = songsHTML;
   };
   
+  playButton.addEventListener("click", () => {
+  
+  });
+  
   const sortSongs = () => {
     userData?.songs.sort((a,b) => {
       if (a.title < b.title) {
@@ -141,7 +148,8 @@ function Home() {
     return userData?.songs;
   };
   
-  renderSongs(sortSongs());
+  
+  renderSongs(userData?.songs);
   
   
   return (
