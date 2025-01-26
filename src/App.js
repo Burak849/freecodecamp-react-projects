@@ -9,6 +9,7 @@ import Randombg from './pages/Randombg';
 import Caloriecounter from './pages/Counter'
 import RPSgame from './pages/RPSgame'
 import Music from './pages/Music'
+import Teams from './pages/Teams'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/caloriecounter" element={<Caloriecounter />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/randombg" element={<Randombg />} />
+        <Route path="/teams" element={<Teams />} />
         <Route path="/rockpaperscissor" element={<RPSgame />} />
       </Routes>
     </Router>

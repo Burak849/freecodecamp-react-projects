@@ -18,6 +18,12 @@ function Home() {
       </article>
 
       <article>
+      <h1>Football Teams</h1>
+      <p>You can use this as a Football player cards</p>
+      <button type='button' className='buttonclass'  onClick={() => navigate('/teams')}>View</button>
+      </article>
+
+      <article>
       <h1>Music</h1>
       <p>You can use this as a Calculator</p>
       <button type='button' className='buttonclass'  onClick={() => navigate('/music')}>View</button>
