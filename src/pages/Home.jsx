@@ -7,7 +7,7 @@ function Home() {
     const navigate = useNavigate();
 //TAMAMLANDIGINDA 3.ADRESE MONSTER EKLENECEK
   return (
-    <section className='sectionclass'>
+    <section>
 
       <h1>Welcome to Dashboard</h1> 
 
@@ -21,6 +21,12 @@ function Home() {
       <h1>Football Teams</h1>
       <p>You can use this as a Football player cards</p>
       <button type='button' className='buttonclass'  onClick={() => navigate('/teams')}>View</button>
+      </article>
+
+      <article>
+      <h1>To-Do App</h1>
+      <p>You can use this as a To-Do App</p>
+      <button type='button' className='buttonclass'  onClick={() => navigate('/todoapp')}>View</button>
       </article>
 
       <article>

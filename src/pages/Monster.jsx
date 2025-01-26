@@ -217,7 +217,7 @@ const goCave = () => setMessage(locations[2].text);
 
 //arrange the styles!
   return (
-  <section className="sectionclass">
+  <section>
     <div id="game">
       <div id="stats">
         <span className="stat">XP: <strong><span id="xpText">0</span></strong></span>

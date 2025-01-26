@@ -235,7 +235,7 @@ function Cards() {
   
   
   return (
-    <section className='sectionclass'>
+    <section>
     
     <div class="team-stats">
         <p>Team: <span id="team"></span></p>

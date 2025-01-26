@@ -1,25 +1,28 @@
 /*HOME.JSX CSS*/
+body{
+  background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
 section{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     height: 100vh;
     gap: 2.5rem;
     padding: 5rem;
-    background:  linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-.sectionclass h1 {
+section h1 {
   grid-column: span 5; 
   font-size: 1.2em; 
   color: white; 
   cursor: default;
 
 }
-.sectionclass article {
+section article {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -33,26 +36,26 @@ section{
   transition: all .3s;
   margin-bottom: 1rem;
 }
-.sectionclass article:hover{
+section article:hover{
   transform: scale(1.1);
   border: 3px solid #30cfd0;
   animation: hueChange 5s infinite;
   border-radius: 50px;
 }
 
-.sectionclass article:nth-child(1) {
+section article:nth-child(1) {
   background-color: transparent;
 }
 
-.sectionclass article:nth-child(2) {
+section article:nth-child(2) {
   background-color: transparent;
 }
 
-.sectionclass article:nth-child(3) {
+section article:nth-child(3) {
   background-color: transparent;
 }
 
-.sectionclass article:nth-child(4) {
+section article:nth-child(4) {
   background-color: transparent;
 }
 

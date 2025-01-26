@@ -103,7 +103,7 @@ const soundBank = [
           
     
           return (
-<section className='sectionclass' style={{display:'flex', justifyContent:'center'}}>
+<section style={{display:'flex', justifyContent:'center'}}>
             <div id="drum-machine" style={{ boxShadow: '0px 8px 15px rgba(0, 0, 0, 0.8)',display:'flex',flexDirection:'column',gap:'4rem', height:'auto', width:'30rem', border:'2px solid white', padding:'5rem', borderRadius:'25px', background:'#b77e7ecf'}}>
               <div id="display" style={{color:'white', fontSize:'1.4em', background: '#204949', display: 'flex', height: '5rem', color: 'white', fontSize: '1.4em', alignItems:'center', justifyContent: 'center'}}>{display}</div>
               <div className="pad-bank">

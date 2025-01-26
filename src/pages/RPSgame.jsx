@@ -55,7 +55,7 @@ function RPSgame() {
   }
 
   return (
-    <section className='sectionclass'>
+    <section>
       <details className='rules-container'>
         <summary>Rules to the game</summary>
         <p>You will be playing against the computer.</p>

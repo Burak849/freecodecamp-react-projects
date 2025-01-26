@@ -79,7 +79,7 @@ function Calculator() {
   };
 
   return (
-    <section className="sectionclass" style={{ display: "flex" }}>
+    <section style={{ display: "flex" }}>
       <div className="calculator">
         <div id="display" className="calculatorscreen">
           {display}
