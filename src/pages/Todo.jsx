@@ -15,16 +15,24 @@ function Todoapp() {
   const dateInput = document.getElementById("date-input");
   const descriptionInput = document.getElementById("description-input");
   
-  const taskData = [];
+  const taskData = JSON.parse(localStorage.getItem("data")) || [];
   let currentTask = {};
   
+  const removeSpecialChars = (val) => {
+    return val.trim().replace(/[^A-Za-z0-9\-\s]/g, '')
+  }
+  
   const addOrUpdateTask = () => {
+     if(!titleInput.value.trim()){
+      alert("Please provide a title");
+      return;
+    }
     const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
     const taskObj = {
-      id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
-      title: titleInput.value,
-      date: dateInput.value,
-      description: descriptionInput.value,
+      id: `${removeSpecialChars(titleInput.value).toLowerCase().split(" ").join("-")}-${Date.now()}`,
+      title: removeSpecialChars(titleInput.value),
+      date: removeSpecialChars(dateInput.value),
+      description: removeSpecialChars(descriptionInput.value),
     };
   
     if (dataArrIndex === -1) {
@@ -33,6 +41,7 @@ function Todoapp() {
       taskData[dataArrIndex] = taskObj;
     }
   
+    localStorage.setItem("data", JSON.stringify(taskData));
     updateTaskContainer()
     reset()
   };
@@ -42,7 +51,7 @@ function Todoapp() {
   
     taskData.forEach(
       ({ id, title, date, description }) => {
-          tasksContainer.innerHTML += `
+          (tasksContainer.innerHTML += `
           <div class="task" id="${id}">
             <p><strong>Title:</strong> ${title}</p>
             <p><strong>Date:</strong> ${date}</p>
@@ -50,7 +59,7 @@ function Todoapp() {
             <button onclick="editTask(this)" type="button" class="btn">Edit</button>
             <button onclick="deleteTask(this)" type="button" class="btn">Delete</button> 
           </div>
-        `
+        `)
       }
     );
   };
@@ -63,6 +72,7 @@ function Todoapp() {
   
     buttonEl.parentElement.remove();
     taskData.splice(dataArrIndex, 1);
+    localStorage.setItem("data", JSON.stringify(taskData));
   }
   
   const editTask = (buttonEl) => {
@@ -82,11 +92,16 @@ function Todoapp() {
   }
   
   const reset = () => {
+    addOrUpdateTaskBtn.innerText = "Add Task";
     titleInput.value = "";
     dateInput.value = "";
     descriptionInput.value = "";
     taskForm.classList.toggle("hidden");
     currentTask = {};
+  }
+  
+  if (taskData.length) {
+    updateTaskContainer();
   }
   
   openTaskFormBtn.addEventListener("click", () =>
@@ -116,23 +131,6 @@ function Todoapp() {
   
     addOrUpdateTask();
   });
-  
-  const myTaskArr = [
-    { task: "Walk the Dog", date: "22-04-2022" },
-    { task: "Read some books", date: "02-11-2023" },
-    { task: "Watch football", date: "10-08-2021" },
-  ];
-  
-  localStorage.setItem("data", JSON.stringify(myTaskArr));
-  
-  //localStorage.removeItem("data");
-  localStorage.clear();
-  
-  const getTaskArr = localStorage.getItem("data")
-  console.log(getTaskArr)
-  
-  const getTaskArrObj = JSON.parse(localStorage.getItem("data"));
-  console.log(getTaskArrObj);
     
   return (
     <section>
