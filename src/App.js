@@ -11,6 +11,7 @@ import RPSgame from './pages/RPSgame'
 import Music from './pages/Music'
 import Teams from './pages/Teams'
 import Todoapp from './pages/Todo'
+import BinaryConverter from './pages/BinaryConverter';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/drum" element={<Drum />} />
         <Route path="/todoapp" element={<Todoapp />} />
         <Route path="/caloriecounter" element={<Caloriecounter />} />
+        <Route path="/binaryconverter" element={<BinaryConverter />} />
         <Route path="/quote" element={<Quote />} />
         <Route path="/randombg" element={<Randombg />} />
         <Route path="/teams" element={<Teams />} />
