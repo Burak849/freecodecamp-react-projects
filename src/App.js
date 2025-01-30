@@ -12,6 +12,7 @@ import Music from './pages/Music'
 import Teams from './pages/Teams'
 import Todoapp from './pages/Todo'
 import BinaryConverter from './pages/BinaryConverter';
+import SpamFinder from './pages/Spamfinder';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/music" element={<Music />} />
         <Route path="/drum" element={<Drum />} />
+        <Route path="/spamfinder" element={<SpamFinder />} />
         <Route path="/todoapp" element={<Todoapp />} />
         <Route path="/caloriecounter" element={<Caloriecounter />} />
         <Route path="/binaryconverter" element={<BinaryConverter />} />

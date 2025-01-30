@@ -24,6 +24,12 @@ function Home() {
       </article>
 
       <article>
+      <h1>Spam Finder</h1>
+      <p>You can use this as a Spam Finder</p>
+      <button type='button' className='buttonclass'  onClick={() => navigate('/spamfinder')}>View</button>
+      </article>
+
+      <article>
       <h1>Binary Converter</h1>
       <p>You can use this as a Binary Converter</p>
       <button type='button' className='buttonclass'  onClick={() => navigate('/binaryconverter')}>View</button>
