@@ -13,6 +13,7 @@ import Teams from './pages/Teams'
 import Todoapp from './pages/Todo'
 import BinaryConverter from './pages/BinaryConverter';
 import SpamFinder from './pages/Spamfinder';
+import Sorter from './pages/Sorter';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/music" element={<Music />} />
         <Route path="/drum" element={<Drum />} />
+        <Route path="/sorter" element={<Sorter />} />
         <Route path="/spamfinder" element={<SpamFinder />} />
         <Route path="/todoapp" element={<Todoapp />} />
         <Route path="/caloriecounter" element={<Caloriecounter />} />
